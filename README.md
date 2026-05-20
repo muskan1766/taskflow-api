@@ -1,6 +1,6 @@
-# Backend Project API
+# TaskFlow API
 
-A full-stack backend internship assignment project built using FastAPI, SQLite, and Vanilla JavaScript.
+A full-stack task management system built using FastAPI, SQLite, JWT authentication, and Vanilla JavaScript frontend.
 
 ---
 
@@ -10,30 +10,31 @@ A full-stack backend internship assignment project built using FastAPI, SQLite, 
 - User Registration
 - User Login
 - JWT Authentication
-- Password Hashing
+- Password Hashing using Passlib
 
-## Role-Based Access
+## Role-Based Access Control
 - User Role
 - Admin Role
-- Admin-only task deletion
+- Admin-only Task Deletion
 
 ## Task Management
 - Create Tasks
 - View Tasks
 - Delete Tasks
-- User-specific tasks
+- User-specific Tasks
 
 ## Frontend
-- Vanilla JavaScript frontend
-- Login/Register UI
+- Vanilla JavaScript Frontend
+- Login & Registration UI
 - Task Dashboard
 - Logout Functionality
+- Role Display
 
 ## Security
 - JWT Token Authentication
 - Password Validation
-- Input Validation
 - Protected Routes
+- Input Validation
 
 ---
 
@@ -43,7 +44,7 @@ A full-stack backend internship assignment project built using FastAPI, SQLite, 
 - FastAPI
 - SQLAlchemy
 - SQLite
-- JWT
+- JWT Authentication
 - Passlib
 
 ## Frontend
@@ -55,7 +56,8 @@ A full-stack backend internship assignment project built using FastAPI, SQLite, 
 
 # Project Structure
 
-backend-project/
+```text
+TaskFlow-API/
 
 │
 
@@ -91,16 +93,19 @@ backend-project/
 
 ├── requirements.txt
 
+├── .gitignore
+
 └── README.md
+```
 
 ---
 
-# Installation
+# Installation Guide
 
 ## Clone Repository
 
 ```bash
-git clone <your-github-link>
+git clone https://github.com/muskan1766/taskflow-api.git
 ```
 
 ---
@@ -112,6 +117,8 @@ git clone <your-github-link>
 ```bash
 python -m venv venv
 ```
+
+---
 
 ## Activate Virtual Environment
 
@@ -137,13 +144,13 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-Backend runs at:
+Backend Server:
 
 ```text
 http://127.0.0.1:8000
 ```
 
-Swagger Docs:
+Swagger Documentation:
 
 ```text
 http://127.0.0.1:8000/docs
@@ -166,32 +173,30 @@ using Live Server or browser.
 # API Endpoints
 
 ## Authentication
-
-- POST /auth/register
-- POST /auth/login
+- POST `/auth/register`
+- POST `/auth/login`
 
 ## Tasks
-
-- GET /tasks/
-- POST /tasks/
-- DELETE /tasks/{task_id}
+- GET `/tasks/`
+- POST `/tasks/`
+- DELETE `/tasks/{task_id}`
 
 ---
 
 # Scalability Notes
 
-This project follows a modular architecture for scalability.
+This project follows a modular architecture for scalability and maintainability.
 
 Possible future improvements:
-- PostgreSQL integration
-- Docker deployment
-- Redis caching
-- Microservices architecture
-- Load balancing
-- CI/CD pipeline
+- PostgreSQL Integration
+- Docker Deployment
+- Redis Caching
+- Microservices Architecture
+- Load Balancing
+- CI/CD Pipeline
 
 ---
 
 # Author
 
-Muskan 
+Muskan
