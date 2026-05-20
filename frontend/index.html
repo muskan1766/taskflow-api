@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Project Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Backend Project Dashboard</h1>
+
+        <!-- AUTH SECTION -->
+        <div id="auth-section">
+
+            <h2>Register</h2>
+
+            <input type="text" id="username" placeholder="Username">
+
+            <input type="email" id="email" placeholder="Email">
+
+            <input type="password" id="password" placeholder="Password">
+
+            <select id="role">
+
+                <option value="user">User</option>
+
+                <option value="admin">Admin</option>
+
+            </select>
+
+            <button onclick="registerUser()">
+                Register
+            </button>
+
+            <hr>
+
+            <h2>Login</h2>
+
+            <input type="email" id="loginEmail" placeholder="Email">
+
+            <input type="password" id="loginPassword" placeholder="Password">
+
+            <button onclick="loginUser()">
+                Login
+            </button>
+
+        </div>
+
+
+        <!-- DASHBOARD -->
+        <div id="dashboard" style="display:none;">
+
+            <h2>Create Task</h2>
+
+            <input type="text" id="title" placeholder="Task Title">
+
+            <input type="text" id="description" placeholder="Task Description">
+
+            <button onclick="createTask()">
+                Create Task
+            </button>
+
+            <hr>
+
+            <h3 id="role-text"></h3>
+
+            <button class="logout-btn" onclick="logoutUser()">
+                Logout
+            </button>
+
+            <hr>
+
+            <h2>Your Tasks</h2>
+
+            <div id="tasks-container"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
