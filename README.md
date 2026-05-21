@@ -1,4 +1,5 @@
 # TaskFlow API
+## Full-Stack Task Management System
 
 TaskFlow API is a full-stack task management system built using FastAPI, SQLite, JWT authentication, role-based access control, and Vanilla JavaScript frontend.
 
