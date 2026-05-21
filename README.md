@@ -1,6 +1,6 @@
 # TaskFlow API
 
-A full-stack task management system built using FastAPI, SQLite, JWT authentication, and Vanilla JavaScript frontend.
+TaskFlow API is a full-stack task management system built using FastAPI, SQLite, JWT authentication, role-based access control, and Vanilla JavaScript frontend.
 
 ---
 
@@ -20,6 +20,7 @@ A full-stack task management system built using FastAPI, SQLite, JWT authenticat
 ## Task Management
 - Create Tasks
 - View Tasks
+- Update Tasks
 - Delete Tasks
 - User-specific Tasks
 
@@ -89,6 +90,16 @@ TaskFlow-API/
 
 │
 
+├── screenshots/
+
+│   ├── auth-page.jpg
+
+│   ├── dashboard.jpg
+
+│   └── swagger-docs.png
+
+│
+
 ├── app.db
 
 ├── requirements.txt
@@ -125,7 +136,7 @@ python -m venv venv
 ### Windows
 
 ```bash
-venv\Scripts\activate
+.\venv\Scripts\Activate
 ```
 
 ---
@@ -179,7 +190,28 @@ using Live Server or browser.
 ## Tasks
 - GET `/tasks/`
 - POST `/tasks/`
+- PUT `/tasks/{task_id}`
 - DELETE `/tasks/{task_id}`
+
+---
+
+# Project Screenshots
+
+## Authentication Page
+
+![Authentication Page](screenshots/auth-page.jpg)
+
+---
+
+## Dashboard
+
+![Dashboard](screenshots/dashboard.jpg)
+
+---
+
+## Swagger API Documentation
+
+![Swagger Docs](screenshots/swagger-docs.png)
 
 ---
 
@@ -199,4 +231,4 @@ Possible future improvements:
 
 # Author
 
-Muskan
+Muskan 

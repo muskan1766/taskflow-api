@@ -11,7 +11,7 @@ from app.routes import auth, tasks
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
-    title="Backend Project API"
+    title="TaskFlow API"
 )
 
 # CORS CONFIGURATION
